@@ -20,3 +20,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+
+function logout(){
+    event.preventDefault();
+    document.getElementById('logout-form').submit();
+}
